@@ -1,8 +1,10 @@
-@font-face {
-    font-family: "Lofi" ;
-    src: url("../fonts/Lofi Lifestyle Demo.otf") format("opentype"), url("../fonts/Lofi Lifestyle Demo.ttf") format("truetype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+  --primary-color: rgb(25, 25, 49);
+  --secondary-color: rgb(24, 23, 23);
+  --primary-font: 'Raleway', sans-serif;
+}
 
 
 * {
@@ -10,109 +12,182 @@
   padding: 0;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
-  transition: 0.3s;
+body{
+  background-color: var(--primary-color);
 }
 
-a:hover {
-  opacity: 0.7;
-}
 
-.logo {
-  font-size: 24px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-}
-
-nav {
+/*Nav bar style*/
+nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background: #23232e;
-  height: 8vh;
+  border-bottom: 1px solid rgb(1, 1, 197);
+  background-color: var(--secondary-color);
+  padding: 20px;
 }
 
-main {
-  background: url("bg.jpg") no-repeat center center;
-  background-size: cover;
-  height: 92vh;
+nav a{
+  text-decoration: none;
+  color: white;
 }
 
-.nav-list {
-  list-style: none;
+.nav-list{
   display: flex;
+  list-style: none;
 }
 
-.nav-list li {
-  letter-spacing: 3px;
-  margin-left: 32px;
+.nav-list li{
+  font-family: var(--primary-font);
+  margin: 0px 15px;
 }
 
-.mobile-menu {
+.logo{
+  color: #fff;
+  font-family: var(--primary-font);
+  font-size: 2em;
+}
+
+.mobile-menu{
   display: none;
-  cursor: pointer;
 }
 
-.mobile-menu div {
-  width: 32px;
-  height: 2px;
-  background: #fff;
-  margin: 8px;
-  transition: 0.3s;
+.mobile-menu-icon{
+  display: none;
 }
 
-@media (max-width: 2000px) {
-  body {
-    overflow-x: hidden;
+
+@media screen and (max-width: 730px){
+
+  .nav-list{
+    padding: 1.5rem 4.5rem;
   }
-  .nav-list {
-    position: absolute;
-    top: 8vh;
-    right: 0;
-    width: 50vw;
-    height: 92vh;
-    background: #23232e;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
+
+  .nav-list li{
+    display: none;
   }
-  .nav-list li {
-    margin-left: 0;
-    opacity: 0;
-  }
-  .mobile-menu {
+
+  .mobile-menu-icon{
     display: block;
   }
-}
 
-.nav-list.active {
-  transform: translateX(0);
-}
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
+  .mobile-menu-icon button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
-  to {
-    opacity: 1;
-    transform: translateX(0);
+
+  .mobile-menu ul{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
   }
+
+  .mobile-menu .nav-item{
+    display: block;
+    background-color: var(--secondary-color);
+    color: white;
+    font-family: var(--primary-font);
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .nav-item a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .open{
+    display: block;
+    background-color: transparent;
+  }
+
 }
 
-.mobile-menu.active .line1 {
-  transform: rotate(-45deg) translate(-8px, 8px);
+/*display text below the header*/
+#apresentation{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 100px;
+  font-family: var(--primary-font);
+ 
 }
 
-.mobile-menu.active .line2 {
-  opacity: 0;
+#apresentation-text{
+  color: #fff;
+  line-height: 50px;
+  letter-spacing: 0px;
 }
 
-.mobile-menu.active .line3 {
-  transform: rotate(45deg) translate(-5px, -7px);
+#apresentation-text h1{
+  font-size: 2.5em;
+}
+
+#helio-name{
+  color: rgb(0, 0, 168);
+}
+
+#apresentation-img{
+  transform: translateY(0px);
+  animation: float 5s ease-in-out infinite;
+}
+
+.button-curriculo-linkedin button{
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 2px solid white;
+  font-family: var(--primary-font);
+  background-color: var(--primary-color);
+  transition: 0.8s;
+}
+
+.button-curriculo-linkedin button:hover{
+  background-color: var(--secondary-color);
+}
+
+.linkedin-button{
+  margin-left: 10px;
+}
+
+@keyframes float{
+
+  0%{
+    transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(-30px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+
+}
+
+@media screen and (max-width: 730px){
+    
+    #apresentation{
+      flex-direction: column-reverse;
+    }
+
+}
+
+/*About me text*/
+
+.about-me{
+  color: white;
+  font-family: var(--primary-font);
+  text-align: center;
+  margin: auto;
+  margin-top: 20rem;
+  margin-bottom: 50px;
+  width: 50%;
+  line-height: 30px;
+  visibility: hidden;
 }

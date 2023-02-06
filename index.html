@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="./assets/style/style.css">
     <title>Hélio Schneider</title>
 </head>
@@ -11,20 +12,55 @@
   <header>
     <nav>
       <a class="logo" href="/">Portfólio</a>
-      <div class="mobile-menu">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
       <ul class="nav-list">
         <li><a href="#">Início</a></li>
         <li><a href="#">Sobre</a></li>
         <li><a href="#">Projetos</a></li>
         <li><a href="#">Contato</a></li>
       </ul>
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img class="icon" src="./assets/img/open_icon.png" alt="" width="50px" height="50px"></button>
+      </div>
     </nav>
+    <div class="mobile-menu">
+      <ul>
+        <li class="nav-item"><a href="#">Início</a></li>
+        <li class="nav-item"><a href="#">Sobre</a></li>
+        <li class="nav-item"><a href="#">Projetos</a></li>
+        <li class="nav-item"><a href="#">Contato</a></li>
+      </ul>
+    </div>
   </header>
-  <main></main>
-  <script src="./assets/script/script.js"></script>
+  
+  <main>
+    <section id="apresentation">
+      <div id="apresentation-text">
+        <h1>Olá, meu nome é</h1>
+        <h1 id="helio-name">Hélio Schneider</h1>
+        <h4>Desenvolvedor Front - end</h4>
+        <p class="button-curriculo-linkedin"><button>Curriculo Cv</button><button class="linkedin-button">Linkedin</button></p>
+      </div>
+      <div>
+        <img id="apresentation-img" src="https://www.evilzeppelin.com/img/Alice_Stciker_Rules_02.png" alt="Icon" width="250px" height="250px">
+      </div>
+    </section>
+    <section class="about-me">
+      <div>
+        <h1>Sobre mim</h1>
+        <p width="200px">Atualmente faço projetos utilizando diversas tecnologias. Estou buscando um novo desafio para colocar minhas habilidades em pratica e sou apaixonado por tecnologia, busco sempre  aprimorar minhas habilidades e conhecimentos da melhor forma possível.
+        Na faculdade e nos projetos, sempre tento extrair o máximo de conteúdos, buscando sempre um melhor crescimento profissional e pessoal.
+        </p>
+      </div>
+    </section>
+    <section class="skills">
+      <h1>Habilidades</h1>
+      <div>
+        <p></p>
+        <img src="" alt="">   
+      </div>
+    </section>
+  </main>
+  <script src="./assets/script/navbar.js"></script>
+  <script src="./assets/script/scrollreveal.js"></script>
 </body>
 </html>
