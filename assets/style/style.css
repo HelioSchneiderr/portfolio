@@ -185,9 +185,56 @@ nav a{
   font-family: var(--primary-font);
   text-align: center;
   margin: auto;
-  margin-top: 20rem;
+  margin-top: 15rem;
   margin-bottom: 50px;
   width: 50%;
   line-height: 30px;
-  visibility: hidden;
+  
+}
+
+.skills{
+  color: white;
+  font-family: var(--primary-font);
+  text-align: center;
+  margin: auto;
+  margin-top: 10rem;
+  margin-bottom: 500px;
+  width: 72%;
+  line-height: 30px;
+}
+
+.skills h1{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+}
+
+.card-skills{
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card{
+  color: rgb(2, 2, 177);;
+  margin: 20px;
+  width: 100px;
+  background-color: var(--secondary-color);
+  border-bottom: 4px solid #0202B1;
+  align-items: center;
+  font-family: var(--primary-font);
+  font-weight: 800;
+  padding: 25px;
+  border-radius: 5px 5px 0px 0px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.card:hover{
+  box-shadow: 0 8px 16px 0 rgba(45, 1, 167, 0.2);
+  border-bottom-color: rgba(49, 2, 180, 0.2) ;
+
+
 }
