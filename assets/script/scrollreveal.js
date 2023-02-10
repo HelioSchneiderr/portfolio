@@ -2,7 +2,7 @@ window.sr = ScrollReveal({ reset: true });
 
 let time = 1500
 
-sr.reveal(`#apresentation`, 
+sr.reveal(`#section-0`, 
 
     {
         duration: time,
@@ -12,7 +12,7 @@ sr.reveal(`#apresentation`,
     
 )
 
-sr.reveal(`.about-me-scroll`, 
+sr.reveal(`#section-1`, 
 
     {
     duration: time,
@@ -22,8 +22,27 @@ sr.reveal(`.about-me-scroll`,
     
 )
 
+sr.reveal(`#section-2`, 
 
-sr.reveal(`.card-skills`, 
+    {
+    duration: time,
+    distance: "50px",
+    origin: 'left'
+    }
+   
+)
+
+sr.reveal(`#section-3`, 
+
+    {
+    duration: time,
+    distance: "50px",
+    origin: 'left'
+    }
+    
+)
+
+sr.reveal(`#section-4`, 
 
     {
     duration: time,

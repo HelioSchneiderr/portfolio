@@ -13,10 +13,11 @@
     <nav>
       <a class="logo" href="/">Portfólio</a>
       <ul class="nav-list">
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#section-0">Início</a></li>
+        <li><a href="#section-1">Sobre</a></li>
+        <li><a href="#section-2">Habilidades</a></li>
+        <li><a href="#section-3">Projetos</a></li>
+        <li><a href="#section-4">Contato</a></li>
       </ul>
       <div class="mobile-menu-icon">
         <button onclick="menuShow()"><img class="icon" src="./assets/img/open_icon.png" alt="" width="50px" height="50px"></button>
@@ -25,7 +26,8 @@
     <div class="mobile-menu">
       <ul>
         <li class="nav-item"><a href="#">Início</a></li>
-        <li class="nav-item"><a href="#">Sobre</a></li>
+        <li class="nav-item"><a href="#">Hard Skills</a></li>
+        <li class="nav-item"><a href="#about">Sobre</a></li>
         <li class="nav-item"><a href="#">Projetos</a></li>
         <li class="nav-item"><a href="#">Contato</a></li>
       </ul>
@@ -33,18 +35,21 @@
   </header>
   
   <main>
-    <section id="apresentation">
-      <div id="apresentation-text">
+    <section class="apresentation" id="section-0" >
+      <div class="apresentation-text">
         <h1>Olá, meu nome é</h1>
-        <h1 id="helio-name">Hélio Schneider</h1>
+        <h1 class="helio-name">Hélio Schneider</h1>
         <h4>Desenvolvedor Front - end</h4>
-        <p class="button-curriculo-linkedin"><button>Curriculo Cv</button><button class="linkedin-button">Linkedin</button></p>
+        <p class="button-curriculo-linkedin">
+          <a href="./assets/helio_schneider.pdf"><button>Curriculo Cv</button></a>
+          <a href="https://www.linkedin.com/in/hélio-schneider-676505215/"><button class="linkedin-button">Linkedin</button></a>
+        </p>
       </div>
       <div>
-        <img id="apresentation-img" src="./assets/img/helio_icon.png" alt="Icon">
+        <img class="apresentation-img" src="./assets/img/helio_icon.png" alt="Icon">
       </div>
     </section>
-    <section class="about-me">
+    <section class="about-me" id="section-1">
       <div class=" about-me-scroll">
         <h1>Sobre mim</h1>
         <p width="200px">Atualmente faço projetos utilizando diversas tecnologias. Estou buscando um novo desafio para colocar minhas habilidades em pratica e sou apaixonado por tecnologia, busco sempre  aprimorar minhas habilidades e conhecimentos da melhor forma possível.
@@ -52,8 +57,7 @@
         </p>
       </div>
     </section>
-
-    <section class="skills">
+    <section class="skills" id="section-2">
       <h1>Hard Skills</h1>
       <div class="card-skills">
         <div class="card">
@@ -108,17 +112,16 @@
       </div>
       
     </section>
-
-    <section class="projects">
+    <section class="projects" id="section-3">
       <h1 class="h1-projects">Projetos</h1>
       <h2>Destaques</h2>
       <div  class="card-projects" id="marcio">
         <div class="inside-card-projects" id="1">
           <div class="content-projects">
               <img src="" alt="">
-              <h1>Pizzaria</h1>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad cupiditate voluptas voluptate odit corporis dignissimos iusto quisquam incidunt possimus quae! Voluptas pariatur maiores nulla doloremque dicta id molestiae. Et, adipisci.</p>
-              <p>tecnologias</p>
+              <h1></h1>
+              <p></p>
+              <p></p>
           </div>
           <img  src="https://bqhost.com.br/medias/Criacao-de-site-para-Pizzaria.jpg" width="350px">
            <div  class="icons-project">
@@ -169,6 +172,41 @@
         </div>
         
 
+      </div>
+    </section>
+    <section class="contact" id="section-4">
+        <h1 class="title-contact">Contato</h1>
+        <div class="contact-card">
+          
+          <div class="inside-cards-contact">
+            <a href="https://api.whatsapp.com/send?phone=55997212045&text=Texto%20aqui"
+            target="_blank">
+              <img src="./assets/img/phone_icon.png" alt="">
+              <h1>Whatsapp</h1>
+              <p>(+55) 55997212045</p>
+            </a>
+          </div>
+          <div class="inside-cards-contact">
+            <a href="mailto:helioschndr@gmail.com">
+              <img src="./assets/img/linkedin_icon.png" alt="">
+              <h1>E-mail</h1>
+              <p>helioschndr@gmail.com</p>
+            </a>
+          </div>
+          <div class="inside-cards-contact">
+            <a href="https://www.linkedin.com/in/hélio-schneider-676505215/">
+              <img src="./assets/img/email_icon.png" alt="">
+              <h1>Linkedin</h1>
+              <p>@hélio-schneider</p>
+            </a>
+          </div>
+          <div class="inside-cards-contact">
+            <a href="https://github.com/HelioSchneiderr">
+              <img src="./assets/img/github_icon.png" alt="">
+              <h1>Github</h1>
+              <p>@HelioSchneiderr</p>
+            </a>
+          </div>
       </div>
     </section>
 

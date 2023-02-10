@@ -14,10 +14,16 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior:smooth;
+}
+
 body{
   backdrop-filter:blur(20%);
   background-color: var(--primary-color);
 }
+
+  
 
 
 /*Nav bar style*/
@@ -28,6 +34,7 @@ nav{
   border-bottom: 1px solid rgb(1, 1, 197);
   background-color: var(--secondary-color);
   padding: 20px;
+  
 }
 
 nav a{
@@ -110,30 +117,29 @@ nav a{
 }
 
 /*display text below the header*/
-#apresentation{
+.apresentation{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 100px;
   font-family: var(--primary-font);
- 
 }
 
-#apresentation-text{
+.apresentation-text{
   color: var(--letter-primary-color);
   line-height: 50px;
   letter-spacing: 0px;
 }
 
-#apresentation-text h1{
+.apresentation-text h1{
   font-size: 2.5em;
 }
 
-#helio-name{
+.helio-name{
   color: rgb(0, 0, 168);
 }
 
-#apresentation-img{
+.apresentation-img{
   transform: translateY(0px);
   animation: float 5s ease-in-out infinite;
 }
@@ -175,7 +181,7 @@ nav a{
 
 @media screen and (max-width: 730px){
     
-    #apresentation{
+    .apresentation{
       flex-direction: column-reverse;
     }
 
@@ -194,6 +200,9 @@ nav a{
   line-height: 30px;
   
 }
+
+
+/*Skills*/
 
 .skills{
   color: var(--letter-primary-color);
@@ -230,19 +239,22 @@ nav a{
   padding: 25px;
   border-radius: 5px 5px 0px 0px;
   transition: 0.2s;
+  
   cursor: pointer;
 }
 
 .card:hover{
   box-shadow: 0 8px 16px 0 rgba(45, 1, 167, 0.2);
   border-bottom-color: rgba(49, 2, 180, 0.2) ; 
-  padding: 30px;
+  transform: scale(1.2)
 }
 
+
+/*Projects*/
 .projects{
   font-family: var(--primary-font);
   color: var(--letter-primary-color);
-  margin-top: 10rem;
+  margin-top: 10rem
   
 }
 
@@ -268,17 +280,19 @@ nav a{
 .inside-card-projects{
   height: 249px;
   border-bottom: 2px solid var(--terciary-color);
-  transition: 1s;
+  transition: 0.2s;
+  margin: 30px;
 }
 
 .inside-card-projects:hover{
+  transition: 0.2s;
   box-shadow: 0 8px 16px 0 rgba(45, 1, 167, 0.2);
   border-bottom-color: rgba(49, 2, 180, 0.2) ;
+  transform: scale(1.2)
 }
 
 .card-projects{
   margin-top: 5em;
-  margin-bottom: 50rem;
   display: flex;
   border-radius: 10px;
   position: relative;
@@ -306,12 +320,13 @@ nav a{
   color: rgba(255, 255, 255, 0);
   text-align: end;
   cursor: pointer;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 .see-more:hover{
   background-color: #0202b165;;
   color: white;
+  
 }
 
 .content-projects{
@@ -320,10 +335,65 @@ nav a{
   width: 400px;
 }
 
+/*Contacts*/
 
+.contact{
+  margin-top: 10rem
+}
+
+.contact-card{
+  color: var(--letter-primary-color);
+  font-family: var(--primary-font);
+  text-align: center;
+  margin: auto;
+  margin-top: 5rem;
+  width: 72%;
+  line-height: 30px;
+}
+
+.title-contact{
+  color: white;
+  font-family: var(--primary-font);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5em;
+}
+
+.contact-card{
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 10rem;
+}
+
+.inside-cards-contact{
+  color: white;
+  width: 200px;
+  text-align: center;
+  transition: 0.5s;
+  margin: 17px;
+  
+}
+
+.inside-cards-contact:hover{
+ 
+  transform: scale(1.2)
+}
+
+.inside-cards-contact img{
+  width: 100px;
+  height: 100px;
+}
+
+.inside-cards-contact a{
+  text-decoration: none;
+  font-family: var(--primary-font);
+  color: white;
+}
 
 /*ScrollReveal configuration*/
 
-.card-skills, .about-me-scroll{
+#section-0, #section-1, #section-2, #section-3, #section-4{
   visibility: hidden;
 }
