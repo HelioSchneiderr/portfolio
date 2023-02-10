@@ -1,19 +1,34 @@
 window.sr = ScrollReveal({ reset: true });
 
+let time = 1500
+
 sr.reveal(`#apresentation`, 
 
     {
-    duration: 2000,
-    rotate:{ x: 80, y: 0, z: 0} 
+        duration: time,
+        distance: "50px",
+        origin: 'left'
     }
     
 )
 
-sr.reveal(`#skills`, 
+sr.reveal(`.about-me-scroll`, 
 
     {
-    duration: 2000,
-    rotate:{ x: 80, y: 80, z: 0} 
+    duration: time,
+    distance: "50px",
+    origin: 'left'
+    }
+    
+)
+
+
+sr.reveal(`.card-skills`, 
+
+    {
+    duration: time,
+    distance: "50px",
+    origin: 'left'
     }
     
 )

@@ -9,3 +9,42 @@ function menuShow(){
 
     }
 }
+
+function clickShow(){
+      let body = document.querySelector(`body`)
+
+      body.style.backgroundColor = "white";
+}
+
+let inside = document.getElementsByClassName('inside-card-projects')
+let projects = document.querySelector('.card-projects')
+
+console.log(inside[0].childNodes)
+
+
+
+
+
+
+
+
+/*function seeMore(){
+  let seeMore = document.querySelector(".see-more")
+
+  seeMore.style.visibility = `visible`
+  seeMore.style.backgroundColor = "#0202b165"
+  seeMore.style.color = " white "
+  seeMore.style.transition = "1s"
+  
+}
+
+function seeNothing(){
+  let seeMore = document.querySelector(".see-more")
+
+  
+  seeMore.style.visibility = `hidden `
+  seeMore.style.backgroundColor = "#0202b100"
+  seeMore.style.color = " #0202b100 "
+  
+  
+}*/
