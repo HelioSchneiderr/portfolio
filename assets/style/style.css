@@ -19,6 +19,7 @@ html {
 }
 
 body{
+  overflow-x: hidden;
   backdrop-filter:blur(20%);
   background-color: var(--primary-color);
 }
