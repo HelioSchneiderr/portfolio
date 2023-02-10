@@ -371,13 +371,13 @@ nav a{
   color: white;
   width: 200px;
   text-align: center;
-  transition: 0.5s;
+  transition: 0.2s;
   margin: 17px;
   
 }
 
 .inside-cards-contact:hover{
- 
+  transition: 0.2;
   transform: scale(1.2)
 }
 
