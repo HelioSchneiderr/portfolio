@@ -10,6 +10,7 @@
     <title>Hélio Schneider</title>
 </head>
 <body>
+  
   <header>
     <nav>
       <a class="logo" href="/">Portifólio</a>
@@ -70,6 +71,10 @@
           <img src="./assets/img/css_icon.png" alt="" width="60px" height="60px">   
         </div>
         <div class="card">
+          <p>GitHub</p>
+          <img src="./assets/img/github_skills_icon.png" alt="" width="60px" height="60px">   
+        </div>
+        <div class="card">
           <p>Javascript</p>
           <img src="./assets/img/js_icon.png" alt="" width="60px" height="60px">   
         </div> 
@@ -113,68 +118,95 @@
       </div>
       
     </section>
+
     <section class="projects" id="section-3">
-      <h1 class="h1-projects">Projetos</h1>
-      <h2>Destaques</h2>
-      <div  class="card-projects" id="marcio">
-        <div class="inside-card-projects" id="1">
-          <div class="content-projects">
-              <img src="" alt="">
-              <h1></h1>
-              <p></p>
-              <p></p>
+      <h1>Projetos</h1>
+      <h2 class="destaque">Destaques</h2>
+      <div class="container">
+        <div class="card-project">
+          <div class="card-image">
+            <img src="https://bqhost.com.br/medias/Criacao-de-site-para-Pizzaria.jpg" alt="" width="360px" height="240px">
           </div>
-          <img  src="https://bqhost.com.br/medias/Criacao-de-site-para-Pizzaria.jpg" width="350px">
-           <div  class="icons-project">
-            <h1>Pizzaria</h1>
-              <p>
-                <img src="./assets/img/html_icon.png" alt="" width="25px" height="25px">
-                <img src="./assets/img/css_icon.png" alt="" width="25px" height="25px">
-                <img src="./assets/img/js_icon.png" alt="" width="25px" height="25px">
-                <img src="./assets/img/node_icon.png" alt="" width="25px" height="25px">
-                <img src="./assets/img/mongo_icon.png" alt="" width="25px" height="25px">
-              </p>
-              <p onclick="showProjects()" class="see-more">
-                Veja mais
-              </p>
-          </div>   
+          <div class="content">
+            <h2>Pizzaria</h2>
+            <p>
+              <img src="./assets/img/html_icon.png"  alt="">
+              <img src="./assets/img/css_icon.png"  alt="">
+              <img src="./assets/img/js_icon.png"  alt="">
+              <img src="./assets/img/node_icon.png"  alt="">
+              <img src="./assets/img/css_icon.png"  alt="">
+              <img src="./assets/img/mongo_icon.png" alt="">
+
+            </p>
+            <p>
+              <button class="grey-button">Site</button>
+              <a href="https://drive.google.com/file/d/1HCSRyv_bsemUY0P96eYjbGUn8nVLdzjI/view?usp=share_link" target="_blank"><button>Video</button></a>
+              <a href="https://github.com/HelioSchneiderr/pizzeria_site" target="_blank" rel="noopener noreferrer"><button>Código</button></a>
+            </p>
+          </div>
         </div>
-        <div id="2" class="inside-card-projects">
-          <img src="https://bqhost.com.br/medias/Criacao-de-site-para-Pizzaria.jpg" width="350px">
-           <div  class="icons-project">
-            <h1>Pizzaria</h1>
-              <p>
-                <img src="./assets/img/html_icon.png" alt="" width="25px" height="25px">
-                <img src="./assets/img/css_icon.png" alt="" width="25px" height="25px">
-                <img src="./assets/img/js_icon.png" alt="" width="25px" height="25px">
-                <img src="./assets/img/node_icon.png" alt="" width="25px" height="25px">
-                <img src="./assets/img/mongo_icon.png" alt="" width="25px" height="25px">
-              </p>
-              <p onclick="showProjects()" class="see-more">
-                Veja mais
-              </p>
-          </div>   
+        <div class="card-project">
+          <div class="card-image">
+            <img src="./assets/img/quiz.png" alt="" width="360px" height="240px">
+          </div>
+          <div class="content">
+            <h2>Quiz</h2>
+            <p>
+              <img src="./assets/img/html_icon.png"  alt="">
+              <img src="./assets/img/css_icon.png"  alt="">
+              <img src="./assets/img/js_icon.png"  alt="">
+              <img src="./assets/img/react_icon.png"  alt="">
+            </p>
+            <p>
+              <button class="grey-button">Site</button>
+              <a href="https://drive.google.com/file/d/1yRAEYUjIxQNH6-BFkWjrKVhdNhuiwUYR/view?usp=share_link" target="_blank"><button>Video</button></a>
+              <a href="https://github.com/HelioSchneiderr/quiz" target="_blank" rel="noopener noreferrer"><button>Código</button></a>
+            </p>
+          </div>
         </div>
-        <div  id="3" class="inside-card-projects">
-          <img src="https://bqhost.com.br/medias/Criacao-de-site-para-Pizzaria.jpg" width="350px">
-           <div  class="icons-project">
-            <h1>Pizzaria</h1>
-              <p>
-                <img src="./assets/img/html_icon.png" alt="" width="25px" height="25px">
-                <img src="./assets/img/css_icon.png" alt="" width="25px" height="25px">
-                <img src="./assets/img/js_icon.png" alt="" width="25px" height="25px">
-                <img src="./assets/img/node_icon.png" alt="" width="25px" height="25px">
-                <img src="./assets/img/mongo_icon.png" alt="" width="25px" height="25px">
-              </p>
-              <p class="see-more">
-                Veja mais
-              </p>
-          </div>   
+        <div class="card-project">
+          <div class="card-image">
+            <img style="filter: brightness(60%); " src="./assets/img/secret_world.png" alt="" width="360px" height="240px">
+          </div>
+          <div class="content">
+            <h2>Secret Word</h2>
+            <p>
+              <img src="./assets/img/html_icon.png"  alt="">
+              <img src="./assets/img/css_icon.png"  alt="">
+              <img src="./assets/img/js_icon.png"  alt="">
+              <img src="./assets/img/react_icon.png"  alt="">
+              
+
+            </p>
+            <p>
+              <button class="grey-button">Site</button>
+              <a href="https://drive.google.com/file/d/1xZNcenPqwxU40z86CSerx0cyvQpviMDV/view?usp=share_link" target="_blank"><button>Video</button></a>
+              <a href="https://github.com/HelioSchneiderr/secret_word" target="_blank" rel="noopener noreferrer"><button>Código</button></a>
+            </p>
+          </div>
+        </div>
+        <div class="card-project">
+          <div class="card-image">
+            <img src="./assets/img/rick_and_morty.png" alt="" width="360px" height="240px">
+          </div>
+          <div class="content">
+            <h2>Rick and Morty</h2>
+            <p>
+              <img src="./assets/img/html_icon.png"  alt="">
+              <img src="./assets/img/css_icon.png"  alt="">
+              <img src="./assets/img/js_icon.png"  alt="">
+            </p>
+            <p>
+              <a href="https://helioschneiderr.github.io/Rick_and_Morty/" target="_blank" rel="noopener noreferrer"><button>Site</button></a>
+              <a href="https://drive.google.com/file/d/1iPDLJcNrX3neoRrjRWWVFgVbLjmPBYbl/view?usp=share_link" target="_blank"><button>Video</button></a>
+              <a href="https://github.com/HelioSchneiderr/Rick_and_Morty" target="_blank" rel="noopener noreferrer"><button>Código</button></a>
+            </p>
+          </div>
         </div>
         
-
       </div>
     </section>
+    
     <section class="contact" id="section-4">
         <h1 class="title-contact">Contato</h1>
         <div class="contact-card">

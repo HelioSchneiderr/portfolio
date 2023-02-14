@@ -188,6 +188,7 @@ nav a{
 
 }
 
+
 /*About me text*/
 
 .about-me{
@@ -210,7 +211,6 @@ nav a{
   font-family: var(--primary-font);
   text-align: center;
   margin: auto;
-  margin-top: 10rem;
   width: 72%;
   line-height: 30px;
 }
@@ -218,13 +218,13 @@ nav a{
 .skills h1{
   display: flex;
   justify-content: center;
+  margin-top: 15rem;
   margin-bottom: 30px;
 }
 
 .card-skills{
   display: flex;
-  justify-content: space-around;
-  align-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -252,94 +252,103 @@ nav a{
 
 
 /*Projects*/
+
 .projects{
   font-family: var(--primary-font);
   color: var(--letter-primary-color);
-  margin-top: 10rem
-  
-}
-
-.h1-projects{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-.projects h2{
-  margin-left: 2rem;
-  
-}
-
-.projects hr{
-  border-color: var(--terciary-color);
-  margin-left: 2rem;
-  width: 4rem;
-  size: 1rem;
-  
-}
-
-.inside-card-projects{
-  height: 249px;
-  border-bottom: 2px solid var(--terciary-color);
-  transition: 0.2s;
-  margin: 30px;
-}
-
-.inside-card-projects:hover{
-  transition: 0.2s;
-  box-shadow: 0 8px 16px 0 rgba(45, 1, 167, 0.2);
-  border-bottom-color: rgba(49, 2, 180, 0.2) ;
-  transform: scale(1.1)
-}
-
-.card-projects{
-  margin-top: 5em;
-  display: flex;
-  border-radius: 10px;
-  position: relative;
-  justify-content: space-around;
-  align-content: space-around;
-  flex-wrap: wrap;
-}
-
-.card-projects img{
-  filter: brightness(70%);
-}
-
-.icons-project{
-  position: relative;
-  bottom: 150px;
   text-align: center;
   margin: auto;
+  margin-top: 5rem;
+  width: 80%;
+  line-height: 30px;
 }
 
-.see-more{
-  background-color: #0202b100;;
-  opacity: 0,0;
-  margin-top: 51px;
-  padding: 10px;
-  color: rgba(255, 255, 255, 0);
-  text-align: end;
-  cursor: pointer;
-  transition: 0.5s;
+.destaque{
+  text-align: start;
 }
 
-.see-more:hover{
-  background-color: #0202b165;;
-  color: white;
+.container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 5em;
+}
+
+.card-project{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  width: 360px;
+  margin-bottom: 5em;
   
 }
 
-.content-projects{
-  position: fixed;
-  height: 400px;
-  width: 400px;
+.card-image{
+  border-bottom: 3px solid blue;
+  transition: 0.2s;
+  box-shadow: 0 8px 16px 0 rgba(45, 1, 167, 0.2);
 }
+
+.card-project:hover{
+  
+  border-bottom-color: rgba(49, 2, 180, 0.2) ; 
+  transform: scale(1.2)
+}
+
+.content{
+  position: absolute;
+  text-align: center;
+}
+
+.content img{
+  width: 30px;
+  height: 30px;
+}
+
+
+.content button{
+  background-color: rgba(0, 0, 255, 0);
+  color: rgba(255, 255, 255, 0);
+  padding: 5px;
+  border-radius: 20px;
+  width: 80px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  transition: 0.2s;
+}
+
+.card-project:hover button{
+  transition: 0.2s;
+  background-color: #0202b1;
+  border: 1px solid #fff;
+  color: white;
+}
+
+.content .grey-button{
+  background-color: rgba(0, 0, 255, 0);
+  color: rgba(255, 255, 255, 0);
+  padding: 5px;
+  border-radius: 20px;
+  width: 80px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  transition: 0.2s;
+}
+
+.card-project:hover .grey-button{
+  transition: 0.2s;
+  background-color: #666668;
+  border: 1px solid #fff;
+  color: white;
+}
+
+
+
+
 
 /*Contacts*/
 
 .contact{
-  margin-top: 10rem
+  margin-top: 15rem
 }
 
 .contact-card{

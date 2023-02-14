@@ -22,7 +22,17 @@ let projects = document.querySelector('.card-projects')
 console.log(inside[0].childNodes)
 
 
+function showModal() {
+  var element = document.getElementById("modal");
+ 
 
+  element.classList.add("show-modal");
+}
+
+function closeModal() {
+  var element = document.getElementById("modal");
+  element.classList.remove("show-modal");
+}
 
 
 
