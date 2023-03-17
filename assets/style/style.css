@@ -357,6 +357,27 @@ nav a{
   display: none;
 }
 
+#sub-section-2{
+  display: none;
+}
+
+
+
+.see-more-button{
+  padding: 10px;
+  color: var(--letter-primary-color);
+  cursor: pointer;
+  border-radius: 20px;
+  border: 2px solid white;
+  font-family: var(--primary-font);
+  background-color: var(--primary-color);
+  transition: 0.8s;
+}
+
+.see-more-button:hover{
+  background-color: var(--secondary-color);
+}
+
 
 
 /*Contacts*/
