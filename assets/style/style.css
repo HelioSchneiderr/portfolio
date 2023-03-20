@@ -274,8 +274,14 @@ nav a{
   line-height: 30px;
 }
 
+.project-text{
+  margin-bottom: 5rem;
+}
+
 .destaque{
   text-align: start;
+  border-bottom: 2px solid var(--terciary-color);
+  width: 400px;
 }
 
 .container{
@@ -353,7 +359,39 @@ nav a{
   color: white;
 }
 
+<<<<<<< Updated upstream
 
+=======
+#sub-section-3{
+  display: none;
+  
+}
+
+#sub-section-2{
+  display: none;
+}
+
+#project-see-less{
+  display: none;
+}
+
+
+
+.see-more-button{
+  padding: 10px;
+  color: var(--letter-primary-color);
+  cursor: pointer;
+  border-radius: 20px;
+  border: 2px solid white;
+  font-family: var(--primary-font);
+  background-color: var(--primary-color);
+  transition: 0.8s;
+}
+
+.see-more-button:hover{
+  background-color: var(--secondary-color);
+}
+>>>>>>> Stashed changes
 
 
 
