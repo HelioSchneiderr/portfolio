@@ -235,7 +235,7 @@ nav a{
 
 .card{
   color: var(--terciary-color);
-  margin: 25px;
+  margin: 19px;
   width: 100px;
   background-color: var(--secondary-color);
   border-bottom: 4px solid var(--terciary-color);
